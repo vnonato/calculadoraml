@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Mercado Livre 2024</title>
+    <link rel="stylesheet" href="calculadora_mercadolivre.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora Mercado Livre 2024</h1>
+        <form id="calcForm">
+            <div class="input-group">
+                <label for="valorCompra">Valor de compra:</label>
+                <input type="number" id="valorCompra" value="50" required>
+            </div>
+            <div class="input-group">
+                <label for="lucroDesejado">% Lucro Desejado:</label>
+                <input type="number" id="lucroDesejado" value="0" required>
+            </div>
+            <div class="input-group">
+                <label for="tarifaML">Tarifa do ML:</label>
+                <select id="tarifaML">
+                    <option value="14">Clássico (14%)</option>
+                    <option value="19">Premium (19%)</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="imposto">Imposto (%):</label>
+                <input type="number" id="imposto" value="12" required>
+            </div>
+            <div class="input-group">
+                <label for="custoOperacional">Custo Operacional:</label>
+                <input type="number" id="custoOperacional" value="2" required>
+            </div>
+            <div class="input-group">
+                <label for="calcularEmbalagem">Calcular Embalagem?</label>
+                <select id="calcularEmbalagem">
+                    <option value="0">Não</option>
+                    <option value="2">Sim</option>
+                </select>
+            </div>
+        </form>
+        <div class="output-group">
+            <h2>Preço mínimo de venda: <span id="precoVenda"></span></h2>
+            <div id="feedback"></div>
+            <h3>Resumo:</h3>
+            <p>Custo do Produto: R$<span id="custoProduto"></span></p>
+            <p>Tarifa Fixa ML: R$<span id="tarifaFixaML"></span></p>
+            <p>Tarifa ML: R$<span id="tarifaML"></span></p>
+            <p>Imposto Pago: R$<span id="impostoPago"></span></p>
+            <p>Lucro: R$<span id="lucro"></span></p>
+            <p>% Lucro Venda: <span id="lucroVenda"></span></p>
+            <p>% Lucro Compra: <span id="lucroCompra"></span></p>
+        </div>
+    </div>
+    <script src="calculadora_mercadolivre.js"></script>
+</body>
+</html>

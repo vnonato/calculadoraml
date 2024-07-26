@@ -1,0 +1,91 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 360px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #02338c;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #02338c;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #555;
+}
+
+.input-group input, .input-group select {
+    width: calc(100% - 10px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.input-group input[type="number"]::-webkit-outer-spin-button,
+.input-group input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input-group input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.input-group input:focus, .input-group select:focus {
+    border-color: #02338c;
+    outline: none;
+}
+
+.output-group {
+    margin-top: 20px;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.output-group h2 {
+    font-size: 22px;
+    margin: 0;
+    color: #02338c;
+}
+
+.output-group p {
+    margin: 5px 0;
+}
+
+#feedback {
+    color: red;
+    margin-top: 10px;
+}
